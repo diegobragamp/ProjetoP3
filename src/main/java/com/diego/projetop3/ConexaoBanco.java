@@ -20,7 +20,7 @@ public class ConexaoBanco {
 
         try (Connection conn = getConnection();
              PreparedStatement stmt = conn.prepareStatement(sql)) {
-
+            //novo comentário
             // O Java preenche os '?' na ordem correta e trata aspas, tipos e segurança automaticamente
             stmt.setString(1, nome);
             stmt.setInt(2, idade);
